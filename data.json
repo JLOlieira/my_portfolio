@@ -1,0 +1,52 @@
+{
+    "real_projects": [
+        {
+            "id": 1,
+            "name": "Site - Vereador Claudio Haja Luz",
+            "description": "Site desenvolvido para o vereador Claudio Haja Luz, de Nova Iguaçu - RJ.",
+            "image": "img/site-hajaluz.png",
+            "status": "Em desenvolvimento",
+            "compatible_devices": [
+                "Desktop",
+                "Mobile"
+            ],
+            "tools": [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "links": [
+                {
+                    "name": "Ver site",
+                    "url": "https://hajaluz.vercel.app/"
+                }
+            ]
+        }
+    ],
+    "study_projects": [
+        {
+            "id": 1,
+            "name": "Site - Loja Kabum",
+            "description": "Site desenvolvido para o vereador Claudio Haja Luz, de Nova Iguaçu - RJ.",
+            "image": "img/site-kabum.png",
+            "status": "Em desenvolvimento",
+            "compatible_devices": [
+                "Desktop"
+            ],
+            "tools": [
+                "HTML",
+                "CSS"
+            ],
+            "links": [
+                {
+                    "name": "Ver site",
+                    "url": "https://kabum.vercel.app/"
+                },
+                {
+                    "name": "Ver código",
+                    "url": "https://github.com/JLOlieira/kabum.git"
+                }
+            ]
+        }
+    ]
+}

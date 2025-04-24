@@ -1,0 +1,121 @@
+@media screen and (max-width: 687px) {
+
+    body{
+        padding: 20px;
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+
+        .content{
+            padding: 20px;
+        }
+    }
+    .profile{
+        height: 100%;
+        
+        .skills{
+            i{
+                font-size: 1.8rem;
+            }
+        }
+
+        .social-media{
+            margin-top: 30px;
+        }
+    }
+    main{
+        width: 100%;
+        height: auto;
+    }
+    #projects{
+        .grid{
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            gap: 10px;
+        }
+        .project{
+            width: auto;
+
+            .links{
+                flex-direction: column;
+                margin-top: 15px;
+            }
+        }
+    }
+    #about{
+        .profile-resume{
+            flex-direction: column;
+
+            p{
+                font-size: 0.9rem;
+            }
+
+            .personal-info{
+                flex-direction: row;
+                width: 100%;
+                height: auto;
+                gap: 10px;
+
+                img{
+                    width: 50%;
+                    height: auto;
+                }
+                
+                .info-wrapper{
+                    gap: 20px;
+                    min-width: 160px;
+                    text-align: start;
+                }
+            }
+        }
+    }
+    #qualification{
+        flex-direction: column;
+
+        .career, .certifications{
+            width: 100%;
+
+            
+            .wrapper{
+                width: 100%;
+                
+                .cert div{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    
+    .project-details{
+        .wrapper{
+            width: 100%;
+            height: auto;
+            border-radius: 0 0 20px 20px;
+
+            .links{
+                a{
+                    padding: 15px;
+                }
+            }
+        }
+    }
+    @keyframes wrapper-open{
+        0%{
+            top: -30%;
+        }
+        100%{
+            top: 0;
+        }
+    }
+    @keyframes wrapper-close{
+        0%{
+            top: 0;
+        }
+        100%{
+            top: -30%;
+        }
+    }
+}
