@@ -1,12 +1,13 @@
 @media screen and (max-width: 768px) {
-  .main {
-    img {
-      top: -180px;
-      left: 30%;
-      transform: translateX(-50%);
-    }
-  }
   #root {
+    .main {
+      img {
+        width: 100%;
+        top: 80px;
+        left: 15px;
+        scale: 1.8;
+      }
+    }
     .contact {
       .external-link-icon {
         display: block;
