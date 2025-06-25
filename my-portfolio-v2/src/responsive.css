@@ -1,0 +1,59 @@
+@media screen and (max-width: 1367px) {
+  body {
+    padding: 0 1rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .main {
+    img{
+        top: -210px;
+        scale: 0.8;
+    }
+  }
+  .about {
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    .info {
+        width: 100%;
+
+        
+    }
+    .photo {
+      width: 40%;
+
+      img,
+      span {
+        aspect-ratio: 1/1;
+      }
+    }
+    .certifications {
+      flex-wrap: wrap;
+
+      .certification-card {
+        width: 100%;
+
+        div {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

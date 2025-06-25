@@ -1,0 +1,47 @@
+import "./projects.css";
+import ProjectCard from "../../components/project-card/project-card";
+
+function Projects() {
+  const projects = [
+    {
+      id: 1,
+      tittle: "Tech E-commerce",
+      description: "Um e-commerce moderno e responsivo voltado para produtos de tecnologia, desenvolvido com React.",
+      img: "/techstore.png",
+      techs: ["react"],
+      links: {github: "https://github.com/JLOlieira/e-commerce", protótipo: "https://e-commerce-beryl-delta.vercel.app/"}
+    },
+    {
+      id: 2,
+      tittle: "Clone do site Kabum",
+      description: "Esse é um projeto de estudo desenvolvido para mostrar minhas abilidades e conhecimentos com HTML, CSS e JavaScript.",
+      img: "/kabum.png",
+      techs: ["html", "css", "js"],
+      links: {github: "https://github.com/JLOlieira/Kabum", protótipo: "https://kabum-beta.vercel.app/"}
+    },
+    {
+      id: 3,
+      tittle: "Site Político",
+      description: "Site para organizar informações políticas, como projetos, propostas, eventos, etc.",
+      img: "/hajaluz.png",
+      techs: ["html", "css", "js"],
+      links: {github: "https://github.com/JLOlieira/hajaluz", protótipo: "https://hajaluz.vercel.app/"}
+    }
+  ];
+  return (
+    <div className="projects">
+      {projects.map((project) => (
+        <ProjectCard
+          key={project.id}
+          tittle={project.tittle}
+          description={project.description}
+          img={project.img}
+          techs={project.techs}
+          links={project.links}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default Projects;

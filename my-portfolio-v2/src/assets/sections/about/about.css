@@ -1,0 +1,99 @@
+@import url(/src/colors.css);
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0;
+  gap: 5rem;
+  border-bottom: solid 2px var(--darkGrey);
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 90%;
+  }
+
+  .skills {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 2rem;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      li {
+        width: 2rem;
+        height: 2rem;
+        list-style: none;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .certifications {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .certification-card{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: var(--darkGrey);
+        padding: 0.8rem;
+        border-radius: 5px;
+
+        p{
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        p:last-child{
+            color: var(--lightGrey);
+            font-weight: normal;
+        }
+        .external-link-icon{
+            cursor: pointer;
+        }
+        .external-link-icon:hover{
+            color: var(--blue);
+        }
+    }
+  }
+
+  .photo {
+    width: 20%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    span {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2/3;
+      border-radius: 10px;
+      border: solid 2px var(--grey);
+      top: -15px;
+      left: -15px;
+    }
+  }
+}

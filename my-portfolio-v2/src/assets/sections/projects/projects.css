@@ -1,0 +1,9 @@
+@import url(/src/colors.css);
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    padding-bottom: 6rem;
+    border-bottom: solid 2px var(--darkGrey);
+}
