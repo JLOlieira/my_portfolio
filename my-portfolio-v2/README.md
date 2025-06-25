@@ -1,12 +1,40 @@
-# React + Vite
+# Meu Portfólio 💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse é meu portfólio como desenvolvedor Front-end. Aqui você encontra meus projetos, um pouco sobre mim, minhas skills e como entrar em contato.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Tecnologias usadas
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- CSS
+- Font Awesome
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ O que tem aqui?
+
+- Lista de projetos com links pro GitHub e protótipos
+- Área “sobre mim” com habilidades e uma breve bio
+- Links de contato simples e direto
+- Layout responsivo e com foco na experiência do usuário
+
+---
+
+## 🌐 Deploy
+
+O site está hospedado na Vercel  
+🔗 [Ver site online](https://lukasoliveiradev.vercel.app/)
+
+
+---
+
+## 🧠 Observações
+
+Esse projeto é 100% feito por mim.  
+Foquei em deixar o código limpo, responsivo e fácil de manter.
+
+---
+
