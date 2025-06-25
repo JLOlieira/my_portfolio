@@ -92,7 +92,7 @@
         background-color: transparent;
         border: 1px solid var(--grey);
         color: var(--allWhite);
-        padding: 0.5rem 1rem;
+        padding: 1rem;
         border-radius: 5px;
         font-size: 1rem;
         text-transform: capitalize;
