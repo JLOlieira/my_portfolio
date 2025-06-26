@@ -1,45 +1,36 @@
+import { useNavigate } from "react-router-dom";
 import "./projects.css";
 import ProjectCard from "../../components/project-card/project-card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+
+import projectsData from "../../data/projects.json";
 
 function Projects() {
-  const projects = [
-    {
-      id: 1,
-      tittle: "Tech E-commerce",
-      description: "Um e-commerce moderno e responsivo voltado para produtos de tecnologia, desenvolvido com React.",
-      img: "/techstore.png",
-      techs: ["react"],
-      links: {github: "https://github.com/JLOlieira/e-commerce", protótipo: "https://e-commerce-beryl-delta.vercel.app/"}
-    },
-    {
-      id: 2,
-      tittle: "Clone do site Kabum",
-      description: "Esse é um projeto de estudo desenvolvido para mostrar minhas abilidades e conhecimentos com HTML, CSS e JavaScript.",
-      img: "/kabum.png",
-      techs: ["html", "css", "js"],
-      links: {github: "https://github.com/JLOlieira/Kabum", protótipo: "https://kabum-beta.vercel.app/"}
-    },
-    {
-      id: 3,
-      tittle: "Site Político",
-      description: "Site para organizar informações políticas, como projetos, propostas, eventos, etc.",
-      img: "/hajaluz.png",
-      techs: ["html", "css", "js"],
-      links: {github: "https://github.com/JLOlieira/hajaluz", protótipo: "https://hajaluz.vercel.app/"}
-    }
-  ];
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/projects");
+  };
+  
   return (
-    <div className="projects">
-      {projects.map((project) => (
-        <ProjectCard
-          key={project.id}
-          tittle={project.tittle}
-          description={project.description}
-          img={project.img}
-          techs={project.techs}
-          links={project.links}
-        />
-      ))}
+    <div className="wrapper">
+      <div className="projects">
+        {projectsData.destaques.map((project) => (
+          <ProjectCard
+            key={project.id}
+            tittle={project.tittle}
+            description={project.description}
+            img={project.img}
+            techs={project.techs}
+            links={project.links}
+          />
+        ))}
+      </div>
+      <button className="btn-more" onClick={handleClick}>
+        Ver mais{" "}
+        <FontAwesomeIcon icon={faAngleRight} className="right-arrow" />
+      </button>
     </div>
   );
 }

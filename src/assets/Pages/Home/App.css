@@ -35,6 +35,8 @@ body {
     color: var(--blue);
     animation: loop 2s infinite;
     margin-bottom: 4rem;
+    padding: 1rem;
+    cursor: pointer;
   }
 
   .header {
