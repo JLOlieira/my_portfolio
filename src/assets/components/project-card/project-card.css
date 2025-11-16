@@ -99,19 +99,16 @@
         transition: all 0.2s ease-in-out;
 
         .external-link-icon{
-          opacity: 0;
-          font-size: 0;
+          opacity: 1;
+          font-size: 0.8rem;
           transition: all 0.2s ease-in-out;
         }
       }
       button:hover {
         background-color: var(--blue);
+        border: solid 1px transparent;
+        box-shadow: 0 0 10px var(--blue);
         cursor: pointer;
-
-        .external-link-icon{
-          opacity: 1;
-          font-size: 1rem;
-        }
       }
     }
   }

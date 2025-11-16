@@ -24,11 +24,11 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      if(scrollY > 50 && !scrolledToProjects){
+      if (scrollY > 50 && !scrolledToProjects) {
         scrollToProjects();
       }
 
-      if(scrollY < 50 && scrolledToProjects){
+      if (scrollY < 50 && scrolledToProjects) {
         setScrolledToProjects(false);
       }
     };
@@ -54,25 +54,32 @@ function App() {
           onClick={scrollToProjects}
         />
         <img src="/Retrato sf.png" alt="Retrato" />
+        <img src="/mainbg.jpg" alt="Background" className="background" />
       </div>
       <section ref={projectRef}>
         <Projects />
       </section>
-      <About />
-      <Contact />
-      <footer>
-        <p>2025 - Lukas Oliveira</p>
-        <p>
-          Esse e outros projetos estão disponíveis no meu{" "}
-          <a href="https://github.com/JLOlieira" target="_blank">
-            Github{" "}
-            <FontAwesomeIcon
-              icon={faArrowUpRightFromSquare}
-              className="external-link-icon"
-            />
-          </a>
-        </p>
-      </footer>
+      <section>
+        <About />
+      </section>
+      <section>
+        <Contact />
+      </section>
+      <section>
+        <footer>
+          <p>2025 - Lukas Oliveira</p>
+          <p>
+            Esse e outros projetos estão disponíveis no meu{" "}
+            <a href="https://github.com/JLOlieira" target="_blank">
+              Github{" "}
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                className="external-link-icon"
+              />
+            </a>
+          </p>
+        </footer>
+      </section>
       <ScrollToTopBtn />
     </>
   );

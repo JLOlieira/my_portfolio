@@ -3,6 +3,9 @@
 body {
   background-color: var(--black);
   color: var(--allWhite);
+}
+
+section{
   padding: 0 8rem;
 }
 
@@ -16,6 +19,14 @@ body {
   height: 110dvh;
   padding: 2rem 0;
   overflow: hidden;
+
+  .background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    filter: saturate(0.5);
+    opacity: 0.08;
+  }
 
   h1 {
     text-align: center;
