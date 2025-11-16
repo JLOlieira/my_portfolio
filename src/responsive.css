@@ -7,6 +7,9 @@
         left: 15px;
         scale: 1.8;
       }
+      .background {
+        height: 100%;
+      }
     }
     .contact {
       .external-link-icon {
@@ -42,13 +45,13 @@
         }
       }
     }
-    .btn-more{
+    .btn-more {
       width: 100%;
     }
   }
 
   @media screen and (max-width: 1367px) {
-    body {
+    section {
       padding: 0 1rem;
     }
     h3 {
