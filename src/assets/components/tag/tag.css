@@ -1,0 +1,16 @@
+@import url(/src/colors.css);
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: relative;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  color: var(--lightGrey);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  border: solid 1px var(--grey);
+}

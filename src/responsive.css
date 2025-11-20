@@ -14,6 +14,9 @@
     .header {
       padding: 0 1rem;
     }
+    .projects-page{
+      padding: 2rem 1rem;
+    }
     .contact {
       .external-link-icon {
         display: block;

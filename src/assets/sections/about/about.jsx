@@ -2,6 +2,7 @@ import "./about.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import Tag from "../../components/tag/tag";
 
 function About() {
   const certifications = [
@@ -34,20 +35,17 @@ function About() {
         </p>
         <div className="skills">
           <h3>Skills</h3>
-          <ul>
-            <li>
-              <img src="techs/react.png" alt="React" />
-            </li>
-            <li>
-              <img src="techs/html.png" alt="HTML" />
-            </li>
-            <li>
-              <img src="techs/css.png" alt="CSS" />
-            </li>
-            <li>
-              <img src="techs/js.png" alt="JavaScript" />
-            </li>
-          </ul>
+          <div className="tags">
+            <Tag name="HTML" />
+            <Tag name="CSS" />
+            <Tag name="JavaScript" />
+            <Tag name="React" />
+            <Tag name="Git" />
+            <Tag name="GitHub" />
+            <Tag name="Figma" />
+            <Tag name="Adobe XD" />
+            <Tag name="UI/UX" />
+          </div>
         </div>
         <div className="certifications">
           <h3>Certificações</h3>

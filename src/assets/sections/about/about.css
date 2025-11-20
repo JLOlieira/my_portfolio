@@ -26,24 +26,17 @@
 
   .skills {
     display: flex;
+    flex-direction: column;
     width: 100%;
     gap: 1rem;
     margin-top: 2rem;
-    ul {
+    
+    .tags{
       display: flex;
       align-items: center;
-      gap: 1rem;
-
-      li {
-        width: 2rem;
-        height: 2rem;
-        list-style: none;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
     }
   }
 

@@ -1,6 +1,7 @@
 import "./project-card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import Tag from "../tag/tag";
 
 function ProjectCard({ id, tittle, description, img, techs, tags, links }) {
   const techsIcons = [...new Set(techs)];
@@ -21,9 +22,7 @@ function ProjectCard({ id, tittle, description, img, techs, tags, links }) {
         </div>
         <div className="tags">
           {tags.map((tag) => (
-            <span className="tag" key={tag}>
-              {tag}
-            </span>
+            <Tag key={tag} name={tag} />
           ))}
         </div>
         <div className="project-buttons">
