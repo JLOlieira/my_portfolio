@@ -21,6 +21,7 @@ function About() {
     <div className="about">
       <div className="info">
         <h2>Um pouco sobre mim</h2>
+        <h4>Em constante aprendizado para entregar código limpo e escalável</h4>
         <p>
           Apaixonado por tudo que envolve tecnologia, conheci a área de
           desenvolvimento há alguns meses e desde então venho mergulhando cada

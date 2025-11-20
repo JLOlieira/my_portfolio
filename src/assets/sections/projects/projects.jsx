@@ -23,6 +23,7 @@ function Projects() {
             description={project.description}
             img={project.img}
             techs={project.techs}
+            tags={project.tags}
             links={project.links}
           />
         ))}

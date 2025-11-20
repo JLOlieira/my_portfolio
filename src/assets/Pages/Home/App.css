@@ -5,7 +5,7 @@ body {
   color: var(--allWhite);
 }
 
-section{
+section {
   padding: 0 8rem;
 }
 
@@ -44,23 +44,62 @@ section{
     opacity: 0.1;
   }
 
-  .arrow {
-    font-size: 3rem;
-    color: var(--blue);
-    animation: loop 2s infinite;
+  .see-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
     margin-bottom: 4rem;
-    padding: 1rem;
     cursor: pointer;
+
+    &:hover {
+      p,
+      .arrow {
+        text-shadow: 0 0 10px var(--blue);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: var(--blue);
+      font-weight: bold;
+    }
+    .arrow {
+      font-size: 2rem;
+      color: var(--blue);
+      animation: loop 2s infinite;
+    }
   }
 
   .header {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    padding: 0 6rem;
     align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
 
     p {
       color: var(--blue);
       font-weight: bold;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      margin-top: 1rem;
+
+      a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 1.6rem;
+        transition: all 0.2s ease-in-out;
+      }
+      a:hover {
+        color: var(--blue);
+      }
     }
   }
 }
@@ -72,7 +111,7 @@ footer {
   height: auto;
   padding: 3rem 0;
 
-  a{
+  a {
     color: var(--blue);
   }
   .external-link-icon {

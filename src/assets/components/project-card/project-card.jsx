@@ -2,8 +2,7 @@ import "./project-card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
-function ProjectCard({ id, tittle, description, img, techs, links }) {
-
+function ProjectCard({ id, tittle, description, img, techs, tags, links }) {
   const techsIcons = [...new Set(techs)];
 
   return (
@@ -20,6 +19,13 @@ function ProjectCard({ id, tittle, description, img, techs, links }) {
             </span>
           ))}
         </div>
+        <div className="tags">
+          {tags.map((tag) => (
+            <span className="tag" key={tag}>
+              {tag}
+            </span>
+          ))}
+        </div>
         <div className="project-buttons">
           {Object.entries(links).map(([name, url]) => (
             <button key={name} onClick={() => window.open(url, "_blank")}>
@@ -31,6 +37,7 @@ function ProjectCard({ id, tittle, description, img, techs, links }) {
             </button>
           ))}
         </div>
+          {/* <button className="details">Ver mais</button> */}
       </div>
     </div>
   );

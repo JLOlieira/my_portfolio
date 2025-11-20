@@ -42,17 +42,29 @@ function App() {
     <>
       <div className="main">
         <div className="header">
-          <h2>Lukas Oliveira</h2>
-          <p>Frontend Developer</p>
+          <div className="left">
+            <h2>Lukas Oliveira</h2>
+            <p>{"<"} Frontend Developer {"/>"}</p>
+          </div>
+          <div className="right">
+            <a href="https://github.com/JLOlieira" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/lukas-oliveira-a92b83146/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
         </div>
         <h1>
           Primeiro, resolva o problema. <br /> Depois, escreva o código.
         </h1>
-        <FontAwesomeIcon
-          icon={faAngleDown}
-          className="arrow"
-          onClick={scrollToProjects}
-        />
+        <div className="see-projects" onClick={scrollToProjects}>
+          <p>Ver projetos</p>
+          <FontAwesomeIcon icon={faAngleDown} className="arrow" />
+        </div>
         <img src="/Retrato sf.png" alt="Retrato" />
         <img src="/mainbg.jpg" alt="Background" className="background" />
       </div>

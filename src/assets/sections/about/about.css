@@ -19,6 +19,7 @@
     width: 90%;
 
     p{
+      color: var(--lightGrey);
       line-height: 1.8;
     }
   }
