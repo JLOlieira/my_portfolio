@@ -148,9 +148,6 @@
                         object-fit: contain;
                         transition: all 0.2s ease-in-out;
                     }
-                    img:hover{
-                        filter: brightness(0.4);
-                    }
                     .full-screen-img{
                         position: fixed;
                         top: 0;
