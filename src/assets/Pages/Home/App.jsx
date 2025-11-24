@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 import "./App.css";
 import "./../../../responsive.css";
@@ -15,10 +15,8 @@ import ScrollToTopBtn from "../../components/scrollToTop/scrollToTopBtn";
 
 function App() {
   const projectRef = useRef(null);
-  const [scrolledToProjects, setScrolledToProjects] = useState(false);
   const scrollToProjects = () => {
     projectRef.current?.scrollIntoView({ behavior: "smooth" });
-    setScrolledToProjects(true);
   };
 
   
