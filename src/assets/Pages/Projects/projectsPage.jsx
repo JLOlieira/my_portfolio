@@ -29,6 +29,7 @@ function ProjectsPage() {
         {projectsData.destaques.map((project) => (
             <ProjectCard
               key={project.id}
+              id={project.id}
               tittle={project.tittle}
               description={project.description}
               img={project.img}

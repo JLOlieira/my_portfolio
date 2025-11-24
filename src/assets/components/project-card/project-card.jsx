@@ -1,10 +1,19 @@
 import "./project-card.css";
+import ProjectModal from "../projectModal/projectModal";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Tag from "../tag/tag";
 
-function ProjectCard({ id, tittle, description, img, techs, tags, links }) {
+function ProjectCard({ id, tittle, description, img, techs, tags }) {
   const techsIcons = [...new Set(techs)];
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalId, setModalId] = useState(id);
+
+  const handleClick = () => {
+    setModalId(Number(id));
+    setModalOpen(true);
+  };
 
   return (
     <div className="project-card" id={id}>
@@ -26,18 +35,14 @@ function ProjectCard({ id, tittle, description, img, techs, tags, links }) {
           ))}
         </div>
         <div className="project-buttons">
-          {Object.entries(links).map(([name, url]) => (
-            <button key={name} onClick={() => window.open(url, "_blank")}>
-              {name}
-              <FontAwesomeIcon
-                icon={faArrowUpRightFromSquare}
-                className="external-link-icon"
-              />
-            </button>
-          ))}
+          <button onClick={() => handleClick(id)}>Detalhes</button>
         </div>
-          {/* <button className="details">Ver mais</button> */}
+
+        {/* <button className="details">Ver mais</button> */}
       </div>
+      {modalOpen && (
+        <ProjectModal id={modalId} open={modalOpen} setOpen={setModalOpen} />
+      )}
     </div>
   );
 }

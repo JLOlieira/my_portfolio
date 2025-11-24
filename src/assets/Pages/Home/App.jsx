@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useState } from "react";
 
 import "./App.css";
 import "./../../../responsive.css";
@@ -21,22 +21,7 @@ function App() {
     setScrolledToProjects(true);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      if (scrollY > 50 && !scrolledToProjects) {
-        scrollToProjects();
-      }
-
-      if (scrollY < 50 && scrolledToProjects) {
-        setScrolledToProjects(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrolledToProjects]);
+  
 
   return (
     <>
@@ -44,7 +29,7 @@ function App() {
         <div className="header">
           <div className="left">
             <h2>Lukas Oliveira</h2>
-            <p>{"<"} Frontend Developer {"/>"}</p>
+            <p>{"<"} Dev Frontend {"/>"}</p>
           </div>
           <div className="right">
             <a href="https://github.com/JLOlieira" target="_blank">

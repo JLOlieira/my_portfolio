@@ -14,7 +14,7 @@
     .header {
       padding: 0 1rem;
     }
-    .projects-page{
+    .projects-page {
       padding: 2rem 1rem;
     }
     .contact {
@@ -53,6 +53,33 @@
     }
     .btn-more {
       width: 100%;
+    }
+  }
+  #modal-root {
+    .project-modal {
+      padding: 1rem;
+    }
+    .modal-content {
+      .content{
+        padding: 2rem;
+
+        .header{
+          flex-direction: column-reverse;
+          gap: 3rem;
+
+          .infos, .tags{
+            max-width: 100%;
+          }
+          .tags{
+            margin-bottom: 0;
+          }
+          .prints{
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
     }
   }
 

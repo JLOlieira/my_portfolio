@@ -1,7 +1,7 @@
 {
   "destaques": [
     {
-      "id": 1,
+      "id": 0,
       "tittle": "Tech E-commerce",
       "description": "Um e-commerce moderno e responsivo voltado para produtos de tecnologia, desenvolvido com React.",
       "img": "/techstore.png",
@@ -12,24 +12,67 @@
       "links": {
         "github": "https://github.com/JLOlieira/e-commerce",
         "protótipo": "https://e-commerce-beryl-delta.vercel.app/"
-      }
+      },
+      "details": [
+        "Listagem de produtos com dados dinâmicos (imagem, descrição, preço, cores, etc.)",
+        "Página de detalhes ao clicar em um produto",
+        "Sistema de avaliação com estrelas baseado na nota (0 a 5)",
+        "Seletor de idioma com bandeiras",
+        "Responsividade completa (mobile, tablet e desktop)",
+        "Animações suaves (transições em menus e botões)",
+        "Scroll automático para o topo ao trocar de página"
+      ],
+      "chalengesSolutions": [
+        "Como primeiro projeto em React, tive que aprender a estruturar a aplicação utilizando componentes funcionais e hooks."
+      ],
+      "improvements": [
+        "Carrinho de compras com localStorage",
+        "Autenticação de usuários",
+        "Backend com banco de dados",
+        "Painel administrativo para produtos",
+        "Filtro por categoria e busca avançada"
+      ],
+      "prints": [
+        "./techstore.png",
+        "./techstore-print1.png",
+        "./techstore-print2.png"
+      ]
     },
     {
-      "id": 2,
+      "id": 1,
       "tittle": "Clone do site Kabum",
       "description": "Projeto de estudo desenvolvido para mostrar minhas habilidades e conhecimentos com HTML, CSS e JavaScript.",
       "img": "/kabum.png",
       "techs": ["html", "css", "js"],
       "tags": [
-        "responsivo", "moderno"
+        "responsivo", "moderno", "e-commerce", "tecnologia", "clone"
       ],
       "links": {
         "github": "https://github.com/JLOlieira/Kabum",
         "protótipo": "https://kabum-beta.vercel.app/"
-      }
+      },
+      "details": [
+        "Interface responsiva para desktop e mobile",
+        "Manipulação de dados com JSON"
+      ],
+      "chalengesSolutions": [
+        "Esse foi o primeiro e-commerce que desenvolvi, então tive que aprender a estruturar a aplicação do zero.",
+        "Utilizar JSON para manipulação de dados dos produtos"
+      ],
+      "improvements": [
+        "Melhorar a performance do aplicativo",
+        "Adicionar mais funcionalidades ao aplicativo",
+        "Refatorar o código para torná-lo mais legível e organizado"
+      ],
+      "prints": [
+        "./kabum.png",
+        "./kabum-print1.png",
+        "./kabum-print2.png",
+        "./kabum-print3.png"
+      ]
     },
     {
-      "id": 3,
+      "id": 2,
       "tittle": "Site Institucional",
       "description": "Um site institucional moderno e responsivo.",
       "img": "/hajaluz.png",
@@ -40,7 +83,28 @@
       "links": {
         "github": "https://github.com/JLOlieira/hajaluz",
         "protótipo": "https://hajaluz.vercel.app/"
-      }
+      },
+      "details": [
+        "Interface responsiva para desktop e mobile",
+        "Manipulação de dados com JSON",
+        "Listagem dinâmica de dados",
+        "Sistema de filtragem de dados"
+      ],
+      "chalengesSolutions": [
+        "Esse projeto foi o primeiro que desenvolvi para um cliente real, então tive que aprender a lidar com as expectativas do cliente e entregar um produto de qualidade.",
+        "Implementar um sistema de busca eficiente para facilitar a navegação dos usuários."
+      ],
+      "improvements": [
+        "Melhorar a performance do aplicativo",
+        "Adicionar mais funcionalidades ao aplicativo",
+        "Refatorar o código para torná-lo mais legível e organizado"
+      ],
+      "prints": [
+        "./hajaluz.png",
+        "./hajaluz-print1.png",
+        "./hajaluz-print2.png",
+        "./hajaluz-print3.png"
+      ]
     }
   ],
   "allProjects": [

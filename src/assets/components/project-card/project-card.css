@@ -9,9 +9,9 @@
   height: auto;
   background-color: var(--darkGrey);
   border-radius: 10px;
-  overflow: hidden;
   border: solid 1px transparent;
   transition: all 0.2s ease-in-out;
+  z-index: 1;
 
   img.project-img {
     width: 100%;
