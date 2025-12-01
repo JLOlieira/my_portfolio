@@ -4,10 +4,10 @@
       "id": 0,
       "tittle": "Tech E-commerce",
       "description": "Um e-commerce moderno e responsivo voltado para produtos de tecnologia, desenvolvido com React.",
-      "img": "/techstore.png",
+      "img": "/techStore-mock.png",
       "techs": ["react"],
       "tags": [
-        "responsivo", "moderno", "react", "e-commerce", "tecnologia"
+        "react", "responsivo", "moderno", "e-commerce"
       ],
       "links": {
         "github": "https://github.com/JLOlieira/e-commerce",
@@ -42,10 +42,10 @@
       "id": 1,
       "tittle": "Clone do site Kabum",
       "description": "Projeto de estudo desenvolvido para mostrar minhas habilidades e conhecimentos com HTML, CSS e JavaScript.",
-      "img": "/kabum.png",
+      "img": "/kabum-mockup.png",
       "techs": ["html", "css", "js"],
       "tags": [
-        "responsivo", "moderno", "e-commerce", "tecnologia", "clone"
+        "html", "css", "js", "responsivo", "moderno", "e-commerce", "clone"
       ],
       "links": {
         "github": "https://github.com/JLOlieira/Kabum",
@@ -68,17 +68,18 @@
         "./kabum.png",
         "./kabum-print1.png",
         "./kabum-print2.png",
-        "./kabum-print3.png"
+        "./kabum-print3.png",
+        "./kabum-print4.png"
       ]
     },
     {
       "id": 2,
       "tittle": "Site Institucional",
       "description": "Um site institucional moderno e responsivo.",
-      "img": "/hajaluz.png",
+      "img": "/hajaluz-mockup.png",
       "techs": ["html", "css", "js"],
       "tags": [
-        "responsivo", "moderno", "institucional", "cliente real"
+        "html", "css", "js", "responsivo", "moderno", "institucional", "cliente real"
       ],
       "links": {
         "github": "https://github.com/JLOlieira/hajaluz",

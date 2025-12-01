@@ -10,6 +10,10 @@
       .background {
         height: 100%;
       }
+      h1{
+        font-size: 2.5rem;
+        padding: 0 1rem;
+      }
     }
     .header {
       padding: 0 1rem;
@@ -57,25 +61,38 @@
   }
   #modal-root {
     .project-modal {
-      padding: 1rem;
+      padding: 4rem 1rem;
     }
     .modal-content {
       .content{
         padding: 2rem;
 
         .header{
-          flex-direction: column-reverse;
           gap: 3rem;
+
+          .top-infos{
+            flex-direction: column-reverse;
+            gap: 1rem;
+
+            .links{
+              width: 100%;
+
+              button{
+                width: 100%;
+              }
+            }
+          }
 
           .infos, .tags{
             max-width: 100%;
           }
           .tags{
             margin-bottom: 0;
+            width: 100%;
           }
           .prints{
             img{
-              width: 100%;
+              width: 90%;
             }
           }
         }

@@ -3,17 +3,23 @@ import "./projectModal.css";
 import Tag from "../tag/tag";
 import projectsData from "../../data/projects.json";
 
-function ProjectModal({ id, open, setOpen }) {
+function ProjectModal({ id, open = false, setOpen }) {
   const handleCloseModal = () => {
     setOpen(false);
     document.body.style.overflow = "auto";
-    console.log(open);
+  };
+  /* close modal on click outside */
+  const handleClickOutside = (e) => {
+    if (e.target.classList.contains("project-modal")) {
+      handleCloseModal();
+    }
   };
 
   if (!open) return null;
 
   if (open) {
     document.body.style.overflow = "hidden";
+    document.addEventListener("click", handleClickOutside);
   }
 
   const index = Number(id);
@@ -24,7 +30,7 @@ function ProjectModal({ id, open, setOpen }) {
   if (!project) return null; // protege contra undefined
 
   const handleFullScreenImg = (e) => {
-    e.target.requestFullscreen();
+    e.target.requestFullscreen();  
   };
   const handleExitFullScreenImg = (e) => {
     e.target.onclick = () => {
@@ -44,7 +50,7 @@ function ProjectModal({ id, open, setOpen }) {
   const content = (
     <div className="project-modal" role="dialog" aria-modal="true">
       <div className="modal-content">
-        <div className="banner">
+        <div className="content">
           <div className="close-btn">
             <button
               onClick={handleCloseModal}
@@ -54,23 +60,37 @@ function ProjectModal({ id, open, setOpen }) {
               <i class="fa-solid fa-x"></i>
             </button>
           </div>
-          <img src={project.img} alt={project.tittle || "Banner"} />
-          <div className="links">
-            {project.links &&
-              Object.entries(project.links).map(([name, url]) => (
-                <button
-                  key={name}
-                  onClick={() => window.open(url, "_blank", "noopener")}
-                >
-                  {name}
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </button>
-              ))}
-          </div>
-        </div>
-
-        <div className="content">
           <div className="header">
+            <div className="prints">
+              {project.prints?.map((p) => (
+                <img
+                  className="print-img"
+                  onClick={handleFullScreenImg}
+                  key={p}
+                  src={p}
+                  alt="Print"
+                />
+              ))}
+            </div>
+            <div className="top-infos">
+              <div className="tags">
+                {project.tags?.map((tag) => (
+                  <Tag key={tag} name={tag} />
+                ))}
+              </div>
+              <div className="links">
+                {project.links &&
+                  Object.entries(project.links).map(([name, url]) => (
+                    <button
+                      key={name}
+                      onClick={() => window.open(url, "_blank", "noopener")}
+                    >
+                      {name}
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  ))}
+              </div>
+            </div>
             <div className="infos">
               <h2>{project.tittle}</h2>
               <p>{project.description}</p>
@@ -104,23 +124,6 @@ function ProjectModal({ id, open, setOpen }) {
                   </p>
                 ))}
               </div>
-
-              <div className="prints">
-                {project.prints?.map((p) => (
-                  <img
-                    onClick={handleFullScreenImg}
-                    key={p}
-                    src={p}
-                    alt="Print"
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className="tags">
-              {project.tags?.map((tag) => (
-                <Tag key={tag} name={tag} />
-              ))}
             </div>
           </div>
         </div>

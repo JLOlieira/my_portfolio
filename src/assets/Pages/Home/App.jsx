@@ -19,15 +19,15 @@ function App() {
     projectRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  
-
   return (
     <>
       <div className="main">
         <div className="header">
           <div className="left">
             <h2>Lukas Oliveira</h2>
-            <p>{"<"} Dev Frontend {"/>"}</p>
+            <p>
+              {"<"} Dev Frontend {"/>"}
+            </p>
           </div>
           <div className="right">
             <a href="https://github.com/JLOlieira" target="_blank">
@@ -45,7 +45,6 @@ function App() {
           Primeiro, resolva o problema. <br /> Depois, escreva o código.
         </h1>
         <div className="see-projects" onClick={scrollToProjects}>
-          <p>Ver projetos</p>
           <FontAwesomeIcon icon={faAngleDown} className="arrow" />
         </div>
         <img src="/Retrato sf.png" alt="Retrato" />

@@ -4,8 +4,8 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tag from "../tag/tag";
 
-function ProjectCard({ id, tittle, description, img, techs, tags }) {
-  const techsIcons = [...new Set(techs)];
+function ProjectCard({ id, tittle, description, img, tags }) {
+  /* const techsIcons = [...new Set(techs)]; */
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalId, setModalId] = useState(id);
@@ -21,14 +21,14 @@ function ProjectCard({ id, tittle, description, img, techs, tags }) {
       <div className="project-info">
         <h3 className="project-title">{tittle}</h3>
         <p className="project-description">{description}</p>
-        <div className="project-technologies">
+        {/* <div className="project-technologies">
           {techsIcons.map((tech) => (
             <span className="project-tech" key={tech}>
               <img src={`/techs/${tech}.png`} alt={tech} />
               <span className="tooltip">{tech}</span>
             </span>
           ))}
-        </div>
+        </div> */}
         <div className="tags">
           {tags.map((tag) => (
             <Tag key={tag} name={tag} />

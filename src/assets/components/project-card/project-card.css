@@ -12,6 +12,7 @@
   border: solid 1px transparent;
   transition: all 0.2s ease-in-out;
   z-index: 1;
+  overflow: hidden;
 
   img.project-img {
     width: 100%;

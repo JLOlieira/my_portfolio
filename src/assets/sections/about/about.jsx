@@ -40,11 +40,9 @@ function About() {
             <Tag name="CSS" />
             <Tag name="JavaScript" />
             <Tag name="React" />
-            <Tag name="Git" />
-            <Tag name="GitHub" />
+            <Tag name="Git/GitHub" />
             <Tag name="Figma" />
-            <Tag name="Adobe XD" />
-            <Tag name="UI/UX" />
+            <Tag name="UI Design" />
           </div>
         </div>
         <div className="certifications">
