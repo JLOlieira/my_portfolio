@@ -1,5 +1,12 @@
 @media screen and (max-width: 768px) {
   #root {
+    section {
+      padding: 1rem;
+
+      .btn-more{
+        width: 100%;
+      }
+    }
     .main {
       img {
         width: 100%;
@@ -10,7 +17,7 @@
       .background {
         height: 100%;
       }
-      h1{
+      h1 {
         font-size: 2.5rem;
         padding: 0 1rem;
       }
@@ -45,119 +52,94 @@
         background: #25d366;
       }
     }
-    .project-card {
-      .project-buttons {
-        button {
-          .external-link-icon {
-            opacity: 1;
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-    .btn-more {
-      width: 100%;
-    }
   }
-  #modal-root {
+  body {
     .project-modal {
-      padding: 4rem 1rem;
-    }
-    .modal-content {
-      .content{
-        padding: 2rem;
+      padding: 2rem;
 
-        .header{
-          gap: 3rem;
+      .modal-content {
+        .content {
+          padding: 2rem;
 
-          .top-infos{
-            flex-direction: column-reverse;
-            gap: 1rem;
+          .header {
+            .top-infos {
+              flex-direction: column-reverse;
+              gap: 1rem;
+              .links {
+                width: 100%;
 
-            .links{
-              width: 100%;
-
-              button{
+                a {
+                  width: 100%;
+                }
+              }
+              .tags {
+                flex-wrap: wrap;
                 width: 100%;
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1367px) {
+  section {
+    padding: 0 1rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .main {
+    img {
+      top: -190px;
+      scale: 0.8;
+    }
+  }
+  #root {
+    .about {
+      flex-direction: column-reverse;
+      gap: 1rem;
 
-          .infos, .tags{
-            max-width: 100%;
-          }
-          .tags{
-            margin-bottom: 0;
+      .info {
+        width: 100%;
+      }
+      .photo {
+        width: 50%;
+
+        img,
+        span {
+          aspect-ratio: 1/1;
+        }
+      }
+
+      .certifications {
+        flex-wrap: wrap;
+
+        .certification-card {
+          width: 100%;
+
+          div {
             width: 100%;
-          }
-          .prints{
-            img{
-              width: 90%;
-            }
           }
         }
       }
     }
   }
-
-  @media screen and (max-width: 1367px) {
-    section {
-      padding: 0 1rem;
-    }
-    h3 {
-      font-size: 1.2rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-    }
-    h1 {
-      font-size: 3rem;
-    }
-    p {
-      font-size: 0.9rem;
-    }
-    .main {
-      img {
-        top: -190px;
-        scale: 0.8;
-      }
-    }
-    #root {
-      .about {
-        flex-direction: column-reverse;
-        gap: 1rem;
-
-        .info {
-          width: 100%;
-        }
-        .photo {
-          width: 50%;
-
-          img,
-          span {
-            aspect-ratio: 1/1;
-          }
-        }
-
-        .certifications {
-          flex-wrap: wrap;
-
-          .certification-card {
-            width: 100%;
-
-            div {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-    .buttons {
-      flex-direction: column;
-    }
-    footer {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
+  .buttons {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
